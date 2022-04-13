@@ -1,10 +1,10 @@
 import ParsClasses as pc
 import  ParsFunctions as pf
 
-
-site = pc.ParsSite("https://geo.pro/reportage/703579-traphousenn-kh-captown/")
+user = input()
+site = pc.ParsSite(user)
 links = site.give_pic_links()
 
-print(type(site.content))
+pf.save_file(links, site.addres)
 
     
